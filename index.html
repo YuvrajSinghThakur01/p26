@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">ShopKaro</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Cart</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="checkout-container">
+    <h2>Checkout Form</h2>
+    <form class="checkout-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select id="payment" name="payment" required>
+          <option value="credit">Credit Card</option>
+          <option value="paypal">UPI</option>
+          <option value="bank">Wallet</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="card">Card Number</label>
+        <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Proceed To Buy</button>
+    </form>
+  </div>
+
+</body>
+</html>
